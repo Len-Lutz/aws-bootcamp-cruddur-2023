@@ -48,7 +48,9 @@ ___
 ## <br>**Week0** 
 ### &nbsp;&nbsp;Watched Week0 (Live Stream), Rewatched the Recorded Video
 ### &nbsp;&nbsp;Watched Chirag's "Spend Considerations" Video
+> #### Completed Pricing Quiz
 ### &nbsp;&nbsp;Watched Ashish's "Security Considerations" Video
+> #### Completed Security Quiz
 
 
 
