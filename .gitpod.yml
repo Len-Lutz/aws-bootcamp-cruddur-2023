@@ -24,7 +24,7 @@ ports:
     port: 3000
     onOpen: open-browser
     visibility: public
-  - name: backendend
+  - name: backend
     port: 4567
     visibility: public
   - name: xray-daemon
