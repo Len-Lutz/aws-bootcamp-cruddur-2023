@@ -1,3 +1,6 @@
 {
-    "aws.telemetry": false
+    "aws.telemetry": false,
+    "editor.experimentalWhitespaceRendering": "font",
+    "editor.renderWhitespace": "all",
+    "files.trimTrailingWhitespace": true
 }
