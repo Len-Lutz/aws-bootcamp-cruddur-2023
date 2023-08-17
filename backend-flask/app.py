@@ -40,6 +40,7 @@ xray_url = os.getenv("AWS_XRAY_URL")
 xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
 XRayMiddleware(app, xray_recorder)
 
+# OTEL ----------
 # Show this in the logs within the backend-flask app (STDOUT)
 simple_processor = SimpleSpanProcessor(ConsoleSpanExporter())
 provider.add_span_processor(simple_processor)
@@ -57,7 +58,7 @@ backend = os.getenv('BACKEND_URL')
 origins = [frontend, backend]
 cors = CORS(
   app,
-  resources={r"/api/*": {"origins": "*"}},
+  resources={r"/api/*": {"origins": origins}},
   expose_headers="location,link",
   allow_headers="content-type,if-modified-since",
   methods="OPTIONS,GET,HEAD,POST"
